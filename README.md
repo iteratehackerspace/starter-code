@@ -8,11 +8,10 @@ For example, a starter `React` project is listed in the `javascript`
 directory. 
 
 # JavaScript
-After cloning this repository, change directories to the `javascript`
+After cloning this repository, change directories to the `javascript/react` or `javascript/react-native`
 directory and type `npm install`. This will install all the
 dependencies of the project. After that you can do: `npm run
-front-end-server` to start up a simple dev server which lets you see
-changes done to your `JSX` in realtime.
+front-end-server` for react starter or `react-native run-android` for react-native starter to start up a simple dev server which lets you see changes done to your `JSX` in realtime.
 
 # C
 After cloning this repository `cd` into the `c` directory
