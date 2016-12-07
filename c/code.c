@@ -32,13 +32,17 @@ void linked_list_example(void)
     if (names[spot] == NULL) {
       break;
     } else {
-      if (iter != NULL) {
         iter_node->name = malloc(strlen(iter) + 1);
         strcpy(iter_node->name, iter);
         spot++;
         iter = names[spot];
-        iter_node->next = malloc(sizeof(struct name_node));
-        iter_node = iter_node->next;
+
+        if (iter != NULL) {
+         iter_node->next = malloc(sizeof(struct name_node));
+         iter_node = iter_node->next;
+      }else
+      {
+        iter_node->next=NULL;
       }
     }
   }
